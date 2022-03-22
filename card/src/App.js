@@ -4,9 +4,9 @@ import RenderVizitCard from './component/RenderVizitCard';
 
 function App() {
   return (
-    <div className="App">
+    
       <RenderVizitCard/>
-    </div>
+    
   );
 }
 
