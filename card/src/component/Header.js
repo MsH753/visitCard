@@ -35,6 +35,8 @@ const AcademyPict=styled.div`
   
 `
 const ButtonHeader=styled.button`
+display: flex;
+align-items: center;
 font-family: 'Gilroy';
 font-style: normal;
 font-weight: 600;
@@ -57,8 +59,9 @@ const Header = () => {
             <NameImg>Алейников Ярослав</NameImg>  
         </MeImage>
         <AcademyPict>
-          <img  src={academy}/>
-          <img style={divStyle} src={link}/>
+          <img  src={link}/>
+          <img style={divStyle} src={academy}/>
+         
         </AcademyPict>
         <ButtonHeader>
           Личный кабинет
