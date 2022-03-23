@@ -1,15 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import meHeader from '../pictures/meHeader.jpg'
+import academy from '../pictures/academy.png'
+import link from '../pictures/link.png'
 
-const Title = styled.div`
-
-  font-size: 1.5em;
-  
-  text-align: center;
-  color: black;
-`;
-const Wrapper = styled.div`
+const HEaderCont = styled.div`
   display: flex;
   align-content: center;
   
@@ -19,13 +14,7 @@ const Wrapper = styled.div`
 `;
 const MeImage = styled.div`
     display: flex;
-    
-    
     height: 52px;
-    
-    
-    
-    
 `
 const NameImg = styled.div`
     display: flex;
@@ -36,22 +25,47 @@ const NameImg = styled.div`
     font-size: 20px;
     line-height: 18px;
     
-    align-items: center;
+    align-self: center;
     
 `;
-
+const AcademyPict=styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+`
+const ButtonHeader=styled.button`
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+background: #585CC6;
+color: #FFFFFF;
+padding: 17px 28px;
+`
+const divStyle = {
+  paddingTop: "7px",
+  
+};
 
 const Header = () => {
   return (
-    <Wrapper>
+    <HEaderCont>
         <MeImage>
-            <img  src={meHeader}/>
-            <NameImg>Алейников Ярослав</NameImg>
-            
+            <img src={meHeader}/>
+            <NameImg>Алейников Ярослав</NameImg>  
         </MeImage>
+        <AcademyPict>
+          <img  src={academy}/>
+          <img style={divStyle} src={link}/>
+        </AcademyPict>
+        <ButtonHeader>
+          Личный кабинет
+        </ButtonHeader>
     
     
-   </Wrapper>
+   </HEaderCont>
     
   )
 }
