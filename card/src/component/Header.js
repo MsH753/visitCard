@@ -27,6 +27,7 @@ const NameImg = styled.div`
     
     align-self: center;
     
+    
 `;
 const AcademyPict=styled.div`
   display: flex;
@@ -45,8 +46,13 @@ line-height: 18px;
 background: #585CC6;
 color: #FFFFFF;
 padding: 17px 28px;
+:hover{
+  background: #FFFFFF;
+  color: black;
+}
+
 `
-const divStyle = {
+const DivStyle = {
   paddingTop: "7px",
   
 };
@@ -60,7 +66,7 @@ const Header = () => {
         </MeImage>
         <AcademyPict>
           <img  src={link}/>
-          <img style={divStyle} src={academy}/>
+          <img style={DivStyle} src={academy}/>
          
         </AcademyPict>
         <ButtonHeader>
